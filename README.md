@@ -22,7 +22,7 @@ Interface web do projeto **ArcadeScore**, desenvolvida em **Angular** para visua
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/ArcadeScoreFront.git
+git clone https://github.com/LuizLudovico/ArcadeScoreFront.git
 cd ArcadeScoreFront
 ```
 
