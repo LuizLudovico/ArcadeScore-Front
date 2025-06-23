@@ -1,0 +1,56 @@
+.estatisticas-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+}
+
+.estatisticas-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; // para posicionar o botão absoluto dentro dele
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.estatisticas-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td:first-child {
+    font-weight: bold;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: transparent;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 8px;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #f8d7da;
+}

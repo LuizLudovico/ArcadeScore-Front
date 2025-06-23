@@ -1,0 +1,26 @@
+<div class="ranking-container">
+  <h1 class="main-title">Arcade Score</h1>
+
+  <div class="ranking-card">
+    <h2 class="subtitle">Ranking – Maiores Pontuações</h2>
+
+    <table class="ranking-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Jogador</th>
+          <th>Pontos</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr *ngFor="let p of pontuacoes; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>
+          <a [routerLink]="['/pontuacao/estatisticas', p.jogador]">{{ p.jogador }}</a>
+        </td>
+        <td>{{ p.pontos }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

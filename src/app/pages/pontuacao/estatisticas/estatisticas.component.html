@@ -1,0 +1,22 @@
+<div class="estatisticas-container">
+  <h1 class="main-title">Arcade Score</h1>
+
+  <div class="estatisticas-card">
+    <button class="close-button" (click)="voltar()">✖</button>
+
+    <h2 class="subtitle">Estatísticas do Jogador - {{ estatisticas?.jogador }}</h2>
+
+    <table *ngIf="estatisticas; else naoEncontrado" class="estatisticas-table">
+      <tr><td>Partidas Jogadas:</td><td>{{ estatisticas.partidasJogadas }}</td></tr>
+      <tr><td>Média de Pontuação:</td><td>{{ estatisticas.mediaPontuacao }}</td></tr>
+      <tr><td>Maior Pontuação:</td><td>{{ estatisticas.maiorPontuacao }}</td></tr>
+      <tr><td>Menor Pontuação:</td><td>{{ estatisticas.menorPontuacao }}</td></tr>
+      <tr><td>Vezes que bateu recorde:</td><td>{{ estatisticas.vezesRecorde }}</td></tr>
+      <tr><td>Tempo que joga:</td><td>{{ estatisticas.tempoQueJoga }}</td></tr>
+    </table>
+
+    <ng-template #naoEncontrado>
+      <p>Jogador não encontrado.</p>
+    </ng-template>
+  </div>
+</div>
